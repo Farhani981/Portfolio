@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    FARHAN NASIR - PORTFOLIO INTERACTIVITY SCRIPT
    - Mobile Hamburger Menu Toggle
    - Smooth Scrolling & Active Navigation Link Highlighting
@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownLinks = document.querySelectorAll('.dropdown-link');
     const navLinks = document.querySelectorAll('.nav-links a');
     const sections = document.querySelectorAll('section');
-    const cvBtn = document.getElementById('cvBtn');
 
     // Reveal the service cards as they enter the viewport.
     const serviceCards = document.querySelectorAll('[data-service-reveal]');
@@ -340,64 +339,4 @@ document.addEventListener('DOMContentLoaded', () => {
         skillsObserver.observe(skillsSection);
     }
 
-    // ==========================================================================
-    // 8. DOWNLOAD CV BUTTON HANDLER
-    // ==========================================================================
-    if (cvBtn) {
-        cvBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            const toast = document.getElementById('toast');
-            if (toast) {
-                toast.textContent = "ðŸ“„ Farhan Nasir's CV download initiated!";
-                toast.className = 'toast toast-success';
-                toast.style.display = 'block';
-                setTimeout(() => { toast.style.display = 'none'; }, 4000);
-            }
-
-            const resumeContent = `================================================
-FARHAN NASIR - FULL STACK WEB DEVELOPER
-================================================
-Email: farhannasir516@gmail.com
-Phone: +92 3401483981
-WhatsApp: +92 3401483981
-GitHub: https://github.com/Farhani981
-LinkedIn: https://www.linkedin.com/in/farhan-nasir-b19896239
-Location: Pakistan
-
-PROFESSIONAL SUMMARY
-Passionate Full Stack Developer dedicated to creating dynamic,
-high-performance, and responsive web applications. Specialized
-in crafting elegant user interfaces and robust architectures.
-
-CORE SKILLS
-- Languages: HTML5, CSS3, JavaScript (ES6+), Node.js
-- Frameworks & Libraries: React.js, Express.js
-- Tools & Styling: Responsive Web Design, Flexbox, CSS Grid, Git/GitHub
-- UI/UX: Glassmorphism, Modern Layouts, Animation (AOS, Typed.js)
-
-FEATURED PROJECTS
-1. Interactive Web Application
-   - Modular front-end with dynamic interactive components.
-2. Dashboard & Analytics Platform
-   - Real-time metrics visualization with dark glassmorphic styling.
-3. E-Commerce Storefront
-   - Full store catalog with live search, filters, and cart.
-
-CONTACT & HIRE
-- Email: farhannasir516@gmail.com
-- WhatsApp / Phone: +92 3401483981
-================================================`;
-
-            const blob = new Blob([resumeContent], { type: 'text/plain;charset=utf-8' });
-            const downloadUrl = URL.createObjectURL(blob);
-            const downloadAnchor = document.createElement('a');
-            downloadAnchor.href = downloadUrl;
-            downloadAnchor.download = 'Farhan_Nasir_Resume.txt';
-            document.body.appendChild(downloadAnchor);
-            downloadAnchor.click();
-            document.body.removeChild(downloadAnchor);
-            URL.revokeObjectURL(downloadUrl);
-        });
-    }
 });
