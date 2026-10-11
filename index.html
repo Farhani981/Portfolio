@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Farhan Nasir - Full Stack Web Developer crafting modern, high-performance responsive web applications using HTML5, CSS3, JavaScript, React, and Node.js.">
+    <title>Farhan Nasir - Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- SEO & Social Open Graph Tags -->
+    <meta property="og:title" content="Farhan Nasir - Full Stack Web Developer Portfolio">
+    <meta property="og:description" content="Explore modern, responsive web applications, frontend platforms, and UI designs crafted by Farhan Nasir.">
+    <meta property="og:image" content="images/rb_1351.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Farhan Nasir - Full Stack Web Developer">
+    <meta name="twitter:description" content="Explore responsive web apps, UI/UX designs, and software engineering projects by Farhan Nasir.">
+    <meta name="twitter:image" content="images/rb_1351.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- Boxicons Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <!-- AOS Animation Library CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Main Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="#Home" class="logo" data-aos="zoom-in" data-aos-duration="1200" aria-label="Farhan Nasir Portfolio Home">
+                <span class="logo-bracket">&lt;</span>Farhan <span>Nasir</span> <span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#Home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="hamburg" id="hamburgerBtn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div class="dropdown" id="dropdownMenu">
+            <a href="#Home" class="dropdown-link">Home</a>
+            <a href="#about" class="dropdown-link">About</a>
+            <a href="#services" class="dropdown-link">Services</a>
+            <a href="#skills" class="dropdown-link">Skills</a>
+            <a href="#experience" class="dropdown-link">Experience</a>
+            <a href="#portfolio" class="dropdown-link">Portfolio</a>
+            <a href="#contact" class="dropdown-link">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section id="Home">
+            <div class="main-container">
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                        Hey, I'm <span>Farhan Nasir</span>
+                    </h1>
+
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+                        I'm a <span>Web Developer</span>
+                    </div>
+
+                    <p data-aos="flip-down" data-aos-duration="1200" data-aos-delay="600">
+                        A passionate Web Developer and Computer Science student, currently working as a
+                        <strong style="color:var(--primary-color)">Web Development Intern at Rex Technologies</strong>.
+                        I specialize in building responsive, high-performance, and user-friendly web applications
+                        using React.js and modern JavaScript.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Farhani981" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="700">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="800">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/farhan-nasir-b19896239" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="900">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://tiktok.com" target="_blank" aria-label="TikTok" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="1000">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="1100">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-btns" data-aos="zoom-out" data-aos-duration="1200" data-aos-delay="1200">
+                        <a href="#contact" class="btn-style">Contact Me</a>
+                        <a href="#contact" id="cvBtn" class="btn-style btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+                    </div>
+                </div>
+
+                <div class="image" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="images/rb_1351.png" alt="Farhan Nasir Profile Picture">
+                </div>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-container">
+                <div class="image" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="images/rb_1812.png" alt="Farhan Nasir About Picture">
+                </div>
+
+                <div class="about-text">
+                    <h2 data-aos="zoom-in" data-aos-duration="1200">About <span>Me</span></h2>
+                    <h4 data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">Web Developer</h4>
+                    <p data-aos="flip-down" data-aos-duration="1200" data-aos-delay="500">
+                        A passionate <strong style="color:var(--primary-color)">Web Developer</strong> with experience in building responsive and
+                        user-friendly websites. Skilled in modern front-end technologies and libraries like
+                        <strong style="color:var(--primary-color)">React.js</strong>, focusing on creating seamless
+                        and high-performance user experiences. Currently pursuing
+                        <strong style="color:var(--primary-color)">BS Computer Science</strong> at the University of Agriculture, Faisalabad.
+                    </p>
+
+                    <div data-aos="zoom-out" data-aos-duration="1200" data-aos-delay="700">
+                        <a href="#contact" class="btn-style">Let's Work Together</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Services Section -->
+        <section class="services" id="services" aria-labelledby="services-title">
+            <h2 class="services__title" id="services-title">My <span>Services</span></h2>
+            <p class="services__subtitle">Simple, clean websites that look good and work on every screen.</p>
+
+            <div class="services__grid">
+                <article class="card" data-service-reveal style="--reveal-delay: 0ms">
+                    <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/><line x1="14" y1="4" x2="10" y2="20"/>
+                    </svg>
+                    <h3 class="card__title">Responsive Websites</h3>
+                    <p class="card__text">Clean websites that work well on mobile, tablet and desktop, built with HTML5, CSS3 and JavaScript.</p>
+                    <ul class="card__tags" aria-label="Skills">
+                        <li>HTML</li><li>CSS</li><li>JS</li>
+                    </ul>
+                    <a class="card__btn" href="#contact" aria-label="Get a quote for Responsive Websites">Get a Quote</a>
+                </article>
+
+                <article class="card" data-service-reveal style="--reveal-delay: 120ms">
+                    <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 3l14 8-6 2-2 6z"/>
+                    </svg>
+                    <h3 class="card__title">Interactive Features</h3>
+                    <p class="card__text">Shopping cart, form validation, sliders and animations that make a website easy and fun to use.</p>
+                    <ul class="card__tags" aria-label="Skills">
+                        <li>Cart</li><li>Forms</li><li>Sliders</li>
+                    </ul>
+                    <a class="card__btn" href="#contact" aria-label="Get a quote for Interactive Features">Get a Quote</a>
+                </article>
+
+                <article class="card" data-service-reveal style="--reveal-delay: 240ms">
+                    <svg class="card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 2c3 2 5 5.5 5 9l-2.5 4h-5L7 11c0-3.5 2-7 5-9z"/>
+                        <circle cx="12" cy="9" r="1.5"/>
+                        <path d="M9.5 15 8 20l4-2 4 2-1.5-5"/>
+                    </svg>
+                    <h3 class="card__title">Fixes &amp; Speed</h3>
+                    <p class="card__text">Fixing layout bugs, improving page load speed and keeping the code clean and organized.</p>
+                    <ul class="card__tags" aria-label="Skills">
+                        <li>Bug Fixes</li><li>Speed</li><li>Clean Code</li>
+                    </ul>
+                    <a class="card__btn" href="#contact" aria-label="Get a quote for Fixes and Speed">Get a Quote</a>
+                </article>
+            </div>
+        </section>
+        <hr>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="sub-title" data-aos="zoom-in" data-aos-duration="1200">My <span>Skills</span></h2>
+
+            <div class="skills-list" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="skill">
+                    <img class="image-top" src="images/html2.png" alt="HTML Icon">
+                    <h3>HTML5</h3>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="90" style="width: 0%;">90%</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="image-top" src="images/css2.png" alt="CSS Icon">
+                    <h3>CSS3 &amp; Responsive Design</h3>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="85" style="width: 0%;">85%</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="image-top" src="images/js.png" alt="JavaScript Icon">
+                    <h3>JavaScript</h3>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="80" style="width: 0%;">80%</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="image-top" src="images/react.svg" alt="React.js Icon">
+                    <h3>React.js</h3>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="75" style="width: 0%;">75%</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="image-top" src="images/node.png" alt="Node.js Icon">
+                    <h3>Node.js</h3>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="65" style="width: 0%;">65%</div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="image-top" src="images/git.svg" alt="Git & GitHub Icon">
+                    <h3>Git &amp; GitHub</h3>
+                    <div class="progress">
+                        <div class="progress-bar" data-percent="85" style="width: 0%;">85%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Experience & Education Section -->
+        <section id="experience">
+            <h2 class="sub-title" data-aos="zoom-in" data-aos-duration="1200">My <span>Journey</span></h2>
+
+            <div class="experience-container">
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item left" data-aos="fade-right" data-aos-duration="1200">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-tag">2022 &amp;ndash; Present</span>
+                            <h3>Web Developer</h3>
+                            <h4 class="timeline-place">Professional Experience</h4>
+                            <p>
+                                &bull; Designed and implemented responsive websites using HTML, CSS, and modern JavaScript frameworks.<br>
+                                &bull; Collaborated with teams to create user-centric designs and intuitive functionalities.<br>
+                                &bull; Optimized web performance to enhance user engagement and site speed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item right" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-tag">2022 &amp;ndash; Present</span>
+                            <h3>Key Projects</h3>
+                            <h4 class="timeline-place">Personal &amp; Freelance Work</h4>
+                            <p>
+                                &bull; <strong>Pizza Delivery Website:</strong> User-friendly platform for online menu browsing and order tracking.<br>
+                                &bull; <strong>Student Skill Tracker:</strong> Responsive web app to track skills and manage achievements.<br>
+                                &bull; <strong>Professional Portfolios (3):</strong> Modern websites optimized for fast performance and high engagement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item left" data-aos="fade-right" data-aos-duration="1200">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-tag">2022 &ndash; 2026</span>
+                            <h3>BS Computer Science</h3>
+                            <h4 class="timeline-place">Higher Education & Software Studies</h4>
+                            <p>Studying core computer science fundamentals, web architecture, software design, database systems, and modern software engineering practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Portfolio / Projects Section -->
+        <section id="portfolio">
+            <div class="main-text">
+                <h2 data-aos="zoom-in" data-aos-duration="1200">Latest <span>Projects</span></h2>
+
+                <div class="portfolio-content">
+                    <div class="row" data-aos="zoom-in" data-aos-duration="1500" data-project="0" data-category="ecommerce">
+                        <img src="images/project 2.png" alt="Pizza shop website preview">
+                        <div class="layer">
+                            <h5>Pizza World</h5>
+                            <p>A responsive pizza ordering website with menu browsing and an interactive cart.</p>
+                            <button type="button" class="open-project-btn" data-project="0" aria-label="Open Pizza World"><i class="bx bx-link-external"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" data-project="1" data-category="web">
+                        <img src="images/project 1.png" alt="Student Skill Tracker website preview">
+                        <div class="layer">
+                            <h5>Student Skill Tracker</h5>
+                            <p>A responsive app for students to log, monitor, and showcase their skills and progress.</p>
+                            <button type="button" class="open-project-btn" data-project="1" aria-label="View Project Details"><i class="bx bx-link-external"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400" data-project="2" data-category="web">
+                        <img src="images/project 3.png" alt="Neumorphic Calculator preview">
+                        <div class="layer">
+                            <h5>Neumorphic Calculator</h5>
+                            <p>A sleek, responsive calculator with a dark neumorphic interface and essential arithmetic operations.</p>
+                            <button type="button" class="open-project-btn" data-project="2" aria-label="View Project Details"><i class="bx bx-link-external"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explore More Projects CTA -->
+                <div class="portfolio-more" data-aos="fade-up" data-aos-duration="1200">
+                    <a href="https://github.com/Farhani981" target="_blank" rel="noopener noreferrer" class="btn-style">
+                        <i class="fa-brands fa-github"></i> View More Projects On GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h2 data-aos="zoom-in" data-aos-duration="1200">Contact <span>Me</span></h2>
+                    <h4 data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">Let's Work Together!</h4>
+                    <p data-aos="flip-down" data-aos-duration="1200" data-aos-delay="500">
+                        Have a project in mind or want to collaborate? I'm currently open to freelance work and
+                        internship opportunities. Feel free to reach out via email, phone, or send a direct message.
+                    </p>
+
+                    <div class="contact-list">
+                        <li data-aos="fade-left" data-aos-duration="1200" data-aos-delay="550">
+                            <i class="fa-solid fa-location-dot"></i> Punjab, Pakistan
+                        </li>
+                        <li data-aos="fade-left" data-aos-duration="1200" data-aos-delay="600">
+                            <i class="fa-solid fa-envelope"></i> farhannasir516@gmail.com
+                        </li>
+                        <li data-aos="fade-left" data-aos-duration="1200" data-aos-delay="700">
+                            <i class="fa-solid fa-phone"></i> +92 340 1483981
+                        </li>
+                    </div>
+
+                    <div class="contact-icon">
+                        <a href="https://github.com/Farhani981" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="800">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="900">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/farhan-nasir-b19896239" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="1000">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="1100">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram" data-aos="fade-up"
+                            data-aos-duration="1200" data-aos-delay="1200">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="zoom-in" data-aos-duration="1500">
+                    <!-- Toast Notification -->
+                    <div id="toast" class="toast" style="display:none;"></div>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="from_name" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="from_email" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="title" placeholder="Your Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" id="sendBtn" class="send-btn">
+                            <span id="btnText">Send Message</span>
+                            <span id="btnLoader" style="display:none;">Sending... â³</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close Project Details">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image-wrap">
+                    <img id="modalImg" src="images/student-skill-tracker.png" alt="Project Preview">
+                </div>
+                <div class="modal-info">
+                    <span id="modalCategory" class="modal-category">Web Development</span>
+                    <h3 id="modalTitle">Project Title</h3>
+                    <p id="modalDesc">Detailed description of the project.</p>
+                    <div class="modal-tech-stack" id="modalTechStack">
+                        <!-- Badges injected by JavaScript -->
+                    </div>
+                    <div class="modal-actions">
+                        <a id="modalLiveLink" href="https://github.com/Farhani981" target="_blank" rel="noopener noreferrer" class="btn-style">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                        <a id="modalGithubLink" href="https://github.com/Farhani981" target="_blank" rel="noopener noreferrer" class="btn-style btn-outline">
+                            <i class="fa-brands fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Farhan Nasir. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0, once: true });
+    </script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        emailjs.init('AKRW6W4bZlqSYI24N');
+
+        const form = document.getElementById('contactForm');
+        const sendBtn = document.getElementById('sendBtn');
+        const btnText = document.getElementById('btnText');
+        const btnLoader = document.getElementById('btnLoader');
+        const toast = document.getElementById('toast');
+
+        function showToast(message, isSuccess) {
+            toast.textContent = message;
+            toast.className = 'toast ' + (isSuccess ? 'toast-success' : 'toast-error');
+            toast.style.display = 'block';
+            setTimeout(() => { toast.style.display = 'none'; }, 5000);
+        }
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('from_name').value.trim();
+            const email = document.getElementById('from_email').value.trim();
+            const subject = document.getElementById('title').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            const templateParams = {
+                from_name: name,
+                name: name,
+                from_email: email,
+                email: email,
+                reply_to: email,
+                to_email: 'farhannasir516@gmail.com',
+                title: subject,
+                subject: subject,
+                message: message
+            };
+
+            // Show loading state
+            sendBtn.disabled = true;
+            btnText.style.display = 'none';
+            btnLoader.style.display = 'inline';
+
+            emailjs.send('service_wqcgs24', 'template_w4fqp6g', templateParams)
+                .then(function () {
+                    showToast('âœ… Message sent successfully! We will get back to you soon.', true);
+                    form.reset();
+                }, function (error) {
+                    console.error('EmailJS Error:', error);
+                    const errorMsg = error?.text || error?.message || 'Failed to send message';
+                    
+                    // Show message & provide mailto fallback
+                    showToast('âš ï¸ EmailJS issue: ' + errorMsg + '. Opening your email app...', false);
+
+                    // Fallback to direct mailto so the inquiry is never lost
+                    setTimeout(() => {
+                        const mailtoLink = `mailto:farhannasir516@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + name + " (" + email + ")\n\n" + message)}`;
+                        window.location.href = mailtoLink;
+                    }, 1500);
+                })
+                .finally(function () {
+                    sendBtn.disabled = false;
+                    btnText.style.display = 'inline';
+                    btnLoader.style.display = 'none';
+                });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
